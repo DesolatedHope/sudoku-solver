@@ -64,6 +64,7 @@ class Sudoku{
                 }
                 board.push_back(row);
             }
+            cout << "\n";
         }
     private:
         bool inRow(int num, int r){
@@ -115,7 +116,7 @@ class Sudoku{
 int main(){
     Sudoku T;
     T.takeInput();
-    if(T.isValidBoard()){
+    if(!T.isValidBoard()){
         cout << "Not A Valid Sudoku Board\n";
     }
     else{
